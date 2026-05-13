@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function MobileBottomNav() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--color-bg-card)] border-t border-[var(--color-border-dark)] lg:hidden flex justify-around items-center py-2 pb-safe shadow-[0_-5px_20px_rgba(0,0,0,0.2)] h-[70px] backdrop-blur-md bg-opacity-90">
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--color-bg-card)] border-t border-[var(--color-border-dark)] lg:hidden flex justify-around items-center py-2 pb-4 shadow-[0_-5px_20px_rgba(0,0,0,0.2)] h-[70px] backdrop-blur-md bg-opacity-90">
       <Link
         href="/masaj-hizmetleri"
         className="flex flex-col items-center gap-1 text-[var(--color-text-sub)] hover:text-[var(--color-primary)] active:text-[var(--color-primary)] w-full transition-colors"

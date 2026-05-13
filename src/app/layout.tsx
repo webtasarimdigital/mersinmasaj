@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     type: "website",
   },
+  verification: {
+    google: "rlwAXz1Uq4Q8Q7IqfcZq-YRExngx2C2DuhSaSw9EJic",
+  },
   robots: {
     index: true,
     follow: true,
@@ -64,6 +67,45 @@ export default function RootLayout({
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "HealthAndBeautyBusiness",
+              "name": "Mersin Masaj Salonu",
+              "image": "https://mersinmasajsalonu.com/logo.png",
+              "@id": "https://mersinmasajsalonu.com",
+              "url": "https://mersinmasajsalonu.com",
+              "telephone": "05407903333",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Yenişehir Mahallesi, Adnan Menderes Bulvarı",
+                "addressLocality": "Mersin",
+                "addressCountry": "TR"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 36.8048682,
+                "longitude": 34.549216
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "11:30",
+                "closes": "02:00"
+              }
+            })
+          }}
         />
       </head>
       <body className="antialiased pb-[70px] lg:pb-0">
