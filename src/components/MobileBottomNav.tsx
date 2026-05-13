@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function MobileBottomNav() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#F8F9FA] border-t border-gray-200 lg:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.15)] pb-[env(safe-area-inset-bottom)]">
-      <div className="flex h-[75px] w-full">
+      <div className="flex h-[60px] w-full">
         {/* Randevu Al Button */}
         <a 
           href="tel:05407903333" 
-          className="w-[42%] bg-[#EBA833] hover:bg-[#D99A2D] transition-colors flex items-center justify-center text-[#1A2530] font-black text-[13px] tracking-widest shadow-[inset_-2px_0_10px_rgba(0,0,0,0.05)]"
+          className="w-[42%] bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] transition-colors flex items-center justify-center text-white font-black text-[13px] tracking-widest shadow-[inset_-2px_0_10px_rgba(0,0,0,0.1)]"
         >
           RANDEVU AL
         </a>
