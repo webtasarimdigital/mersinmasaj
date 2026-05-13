@@ -83,17 +83,17 @@ export default function Home() {
               <div className="w-24 h-1 bg-[var(--color-primary)] mx-auto mt-6 rounded-full"></div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 overflow-x-auto snap-x snap-mandatory pb-8 scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
               {/* Service Card 1 */}
-              <div className="group rounded-2xl overflow-hidden bg-[var(--color-bg-card)] border border-[var(--color-border-dark)] hover:border-[var(--color-primary)]/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(29,184,155,0.2)] flex flex-col h-full">
+              <div className="snap-center min-w-[85vw] sm:min-w-[350px] md:min-w-0 group rounded-3xl overflow-hidden bg-[var(--color-bg-card)] border border-[var(--color-border-dark)] hover:border-[var(--color-primary)]/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(29,184,155,0.2)] flex flex-col h-full relative">
                 <div className="relative h-64 overflow-hidden">
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-bg-card)] to-transparent opacity-80 z-10"></div>
                   <img src="/images/klasik-masaj.webp" alt="Klasik Masaj" className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute top-4 right-4 z-20 bg-[var(--color-bg-dark)]/80 backdrop-blur-md p-2 rounded-lg text-[var(--color-primary)]">
+                  <div className="absolute top-4 right-4 z-20 bg-[var(--color-bg-dark)]/80 backdrop-blur-md p-2 rounded-xl text-[var(--color-primary)] border border-white/10 shadow-lg">
                     <span className="material-symbols-outlined">spa</span>
                   </div>
                 </div>
-                <div className="p-8 flex flex-col flex-1">
+                <div className="p-8 flex flex-col flex-1 relative z-20 -mt-10 bg-gradient-to-b from-transparent to-[var(--color-bg-card)]">
                   <h4 className="text-2xl font-bold text-white mb-3">Klasik Masaj</h4>
                   <p className="text-[var(--color-text-sub)] mb-6 flex-1">Günlük stres ve yorgunluktan kurtulmak, kasları gevşetmek için uygulanan geleneksel İsveç masajı tekniği.</p>
                   <Link href="/masaj-hizmetleri" className="inline-flex items-center gap-2 text-[var(--color-primary)] font-bold group-hover:gap-3 transition-all">
@@ -103,17 +103,17 @@ export default function Home() {
               </div>
 
               {/* Service Card 2 */}
-              <div className="group rounded-2xl overflow-hidden bg-[var(--color-bg-card)] border border-[var(--color-border-dark)] hover:border-[var(--color-primary)]/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(29,184,155,0.2)] flex flex-col h-full">
+              <div className="snap-center min-w-[85vw] sm:min-w-[350px] md:min-w-0 group rounded-3xl overflow-hidden bg-[var(--color-bg-card)] border border-[var(--color-border-dark)] hover:border-[var(--color-primary)]/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(29,184,155,0.2)] flex flex-col h-full relative">
                 <div className="relative h-64 overflow-hidden">
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
-                  <img src="/images/derin-doku-masaj.png" alt="Derin Doku Masajı" className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute top-4 right-4 z-20 bg-[var(--color-bg-dark)]/80 backdrop-blur-md p-2 rounded-lg text-[var(--color-primary)]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-bg-card)] to-transparent opacity-80 z-10"></div>
+                  <img src="/images/medikal-masaj.webp" alt="Medikal Masaj" className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+                  <div className="absolute top-4 right-4 z-20 bg-[var(--color-bg-dark)]/80 backdrop-blur-md p-2 rounded-xl text-[var(--color-primary)] border border-white/10 shadow-lg">
                     <span className="material-symbols-outlined">medical_services</span>
                   </div>
                 </div>
-                <div className="p-8 flex flex-col flex-1">
-                  <h4 className="text-2xl font-bold text-white mb-3">Derin Doku Masajı</h4>
-                  <p className="text-[var(--color-text-sub)] mb-6 flex-1">Bölgesel ağrılar, kronik kas tutulmaları ve yorgunluğa yönelik profesyonel ve güçlü dokunuşlar.</p>
+                <div className="p-8 flex flex-col flex-1 relative z-20 -mt-10 bg-gradient-to-b from-transparent to-[var(--color-bg-card)]">
+                  <h4 className="text-2xl font-bold text-white mb-3">Medikal Masaj</h4>
+                  <p className="text-[var(--color-text-sub)] mb-6 flex-1">Bölgesel ağrılar, kas tutulmaları ve kronik rahatsızlıklara yönelik profesyonel tedavi edici masaj.</p>
                   <Link href="/masaj-hizmetleri" className="inline-flex items-center gap-2 text-[var(--color-primary)] font-bold group-hover:gap-3 transition-all">
                     Detaylı Bilgi <span className="material-symbols-outlined text-sm">arrow_forward</span>
                   </Link>
@@ -121,15 +121,15 @@ export default function Home() {
               </div>
 
               {/* Service Card 3 */}
-              <div className="group rounded-2xl overflow-hidden bg-[var(--color-bg-card)] border border-[var(--color-border-dark)] hover:border-[var(--color-primary)]/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(29,184,155,0.2)] flex flex-col h-full">
+              <div className="snap-center min-w-[85vw] sm:min-w-[350px] md:min-w-0 group rounded-3xl overflow-hidden bg-[var(--color-bg-card)] border border-[var(--color-border-dark)] hover:border-[var(--color-primary)]/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(29,184,155,0.2)] flex flex-col h-full relative">
                 <div className="relative h-64 overflow-hidden">
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-bg-card)] to-transparent opacity-80 z-10"></div>
                   <img src="/images/vip-jakuzi.webp" alt="VIP Masaj" className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute top-4 right-4 z-20 bg-[var(--color-bg-dark)]/80 backdrop-blur-md p-2 rounded-lg text-[#F4C025]">
+                  <div className="absolute top-4 right-4 z-20 bg-[var(--color-bg-dark)]/80 backdrop-blur-md p-2 rounded-xl text-[#F4C025] border border-white/10 shadow-lg">
                     <span className="material-symbols-outlined">diamond</span>
                   </div>
                 </div>
-                <div className="p-8 flex flex-col flex-1">
+                <div className="p-8 flex flex-col flex-1 relative z-20 -mt-10 bg-gradient-to-b from-transparent to-[var(--color-bg-card)]">
                   <h4 className="text-2xl font-bold text-white mb-3">VIP Masaj</h4>
                   <p className="text-[var(--color-text-sub)] mb-6 flex-1">Size özel ayrılmış jakuzili VIP odalarımızda, lüks ve konforun buluştuğu eşsiz bir spa deneyimi.</p>
                   <Link href="/masaj-hizmetleri" className="inline-flex items-center gap-2 text-[#F4C025] font-bold group-hover:gap-3 transition-all">

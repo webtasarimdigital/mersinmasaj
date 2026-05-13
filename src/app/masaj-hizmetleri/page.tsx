@@ -39,17 +39,6 @@ const services = [
     introDescription: "Farklı masaj tekniklerinin en etkili yönlerini birleştirerek size özel bir seans oluşturuyoruz. Tamamen sizin ihtiyaçlarınıza odaklı bir terapi."
   },
   {
-    id: "derin",
-    title: "Derin Doku Masajı",
-    description: "Özellikle kas gerginliği, kronik ağrı ve duruş bozukluğu yaşayanlar için tavsiye edilir. Kas liflerine ve bağ dokularına derin ve güçlü baskılar uygulanır.",
-    features: ["Kronik ağrıları hafifletir", "Duruş bozukluklarını düzeltir", "Sertleşmiş kasları açar"],
-    duration: "60 Dakika",
-    image: "/images/derin-doku-masaj.png",
-    message: "Derin Doku Masajı hakkında bilgi almak istiyorum.",
-    introTitle: "Güçlü Dokunuşlar, Gerçek Rahatlama",
-    introDescription: "Yoğun spor yapanlar veya masa başında çalışanlar için ideal. Kaslarınızın en derin katmanlarına ulaşarak kronik gerginlikleri ortadan kaldırıyoruz."
-  },
-  {
     id: "aromaterapi",
     title: "Aromaterapi Masajı",
     description: "Bitkisel öz yağlar kullanılarak yapılan, hem fiziksel hem de zihinsel olarak derin bir rahatlama sağlayan hafif tempolu masajdır.",
@@ -70,17 +59,6 @@ const services = [
     message: "Soft Masaj hakkında bilgi almak istiyorum.",
     introTitle: "Hafif Dokunuşlar, Büyük Huzur",
     introDescription: "Günün stresinden nazikçe uzaklaşın. Soft masaj ile zihniniz dinginleşirken bedeniniz kuş gibi hafifleyecek."
-  },
-  {
-    id: "thai",
-    title: "Thai Masajı",
-    description: "Geleneksel uzak doğu teknikleriyle bedenin enerji kanallarını açan, esnetme ve germe hareketlerinden oluşan yağsız masaj uygulamasıdır.",
-    features: ["Esnekliği artırır", "Enerji akışını düzenler", "Eklemleri rahatlatır"],
-    duration: "60 Dakika",
-    image: "/images/spa-relax-green.webp",
-    message: "Thai Masajı hakkında bilgi almak istiyorum.",
-    introTitle: "Uzak Doğunun Kadim Sırrı",
-    introDescription: "Yoga benzeri esneme hareketleri ve akupresür teknikleriyle bedeninizi yeniden canlandırın. Dinamik ve yenileyici bir seans sizi bekliyor."
   },
   {
     id: "sultan",
