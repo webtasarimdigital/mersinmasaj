@@ -2,42 +2,43 @@ import Link from "next/link";
 
 export default function MobileBottomNav() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--color-bg-card)] border-t border-[var(--color-border-dark)] lg:hidden flex justify-around items-center py-2 pb-4 shadow-[0_-5px_20px_rgba(0,0,0,0.2)] h-[70px] backdrop-blur-md bg-opacity-90">
-      <Link
-        href="/masaj-hizmetleri"
-        className="flex flex-col items-center gap-1 text-[var(--color-text-sub)] hover:text-[var(--color-primary)] active:text-[var(--color-primary)] w-full transition-colors"
-      >
-        <span className="material-symbols-outlined text-2xl">spa</span>
-        <span className="text-[10px] font-medium leading-none">Hizmetler</span>
-      </Link>
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#F8F9FA] border-t border-gray-200 lg:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.15)] pb-[env(safe-area-inset-bottom)]">
+      <div className="flex h-[75px] w-full">
+        {/* Randevu Al Button */}
+        <a 
+          href="tel:05407903333" 
+          className="w-[42%] bg-[#EBA833] hover:bg-[#D99A2D] transition-colors flex items-center justify-center text-[#1A2530] font-black text-[13px] tracking-widest shadow-[inset_-2px_0_10px_rgba(0,0,0,0.05)]"
+        >
+          RANDEVU AL
+        </a>
 
-      <a
-        href="https://wa.me/905407903333?text=Merhaba,%20bilgi%20almak%20istiyorum"
-        target="_blank"
-        className="flex flex-col items-center gap-1 text-[var(--color-text-sub)] hover:text-[#25D366] active:text-[#25D366] w-full transition-colors"
-      >
-        <span className="material-symbols-outlined text-2xl">chat</span>
-        <span className="text-[10px] font-medium leading-none">WhatsApp</span>
-      </a>
+        {/* 3 Icons */}
+        <div className="w-[58%] flex justify-between items-center px-1">
+          {/* Konum */}
+          <a href="https://maps.app.goo.gl/67E5W57eJYCyj7DKA" target="_blank" className="flex flex-col items-center justify-center gap-1.5 w-1/3 h-full hover:bg-gray-100 transition-colors">
+            <div className="w-[36px] h-[36px] rounded-[10px] bg-[#F39C12] flex items-center justify-center shadow-md">
+              <span className="material-symbols-outlined text-white text-[20px]">location_on</span>
+            </div>
+            <span className="text-[10px] font-bold text-[#2C3E50] tracking-wider">KONUM</span>
+          </a>
 
-      <a
-        href="tel:05407903333"
-        className="flex flex-col items-center gap-1 text-[var(--color-text-sub)] hover:text-[var(--color-primary)] active:text-[var(--color-primary)] w-full transition-colors relative"
-      >
-        <div className="absolute -top-6 bg-[var(--color-primary)] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-4 border-[var(--color-bg-dark)]">
-           <span className="material-symbols-outlined text-2xl">call</span>
+          {/* Ara */}
+          <a href="tel:05407903333" className="flex flex-col items-center justify-center gap-1.5 w-1/3 h-full border-x border-gray-200 hover:bg-gray-100 transition-colors">
+            <div className="w-[36px] h-[36px] rounded-[10px] bg-[#1ABC9C] flex items-center justify-center shadow-md">
+              <span className="material-symbols-outlined text-white text-[20px]">call</span>
+            </div>
+            <span className="text-[10px] font-bold text-[#2C3E50] tracking-wider">ARA</span>
+          </a>
+
+          {/* WhatsApp */}
+          <a href="https://wa.me/905407903333?text=Merhaba,%20bilgi%20almak%20istiyorum" target="_blank" className="flex flex-col items-center justify-center gap-1.5 w-1/3 h-full hover:bg-gray-100 transition-colors">
+            <div className="w-[36px] h-[36px] rounded-[10px] bg-[#25D366] flex items-center justify-center shadow-md">
+              <span className="material-symbols-outlined text-white text-[20px]">chat</span>
+            </div>
+            <span className="text-[10px] font-bold text-[#2C3E50] tracking-wider">WHATSAPP</span>
+          </a>
         </div>
-        <span className="text-[10px] font-medium leading-none mt-6">Ara</span>
-      </a>
-
-      <a
-        href="https://maps.app.goo.gl/67E5W57eJYCyj7DKA"
-        target="_blank"
-        className="flex flex-col items-center gap-1 text-[var(--color-text-sub)] hover:text-[var(--color-primary)] active:text-[var(--color-primary)] w-full transition-colors"
-      >
-        <span className="material-symbols-outlined text-2xl">location_on</span>
-        <span className="text-[10px] font-medium leading-none">Yol Tarifi</span>
-      </a>
+      </div>
     </div>
   );
 }
