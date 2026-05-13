@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1DB89B;
+  --color-primary-hover: #17a085;
+  --color-primary-light: #1DB89B1A;
+  --color-accent: #F4C025;
+  --color-accent-hover: #e0b020;
+  --color-bg-dark: #0B1120;
+  --color-bg-card: #111B2E;
+  --color-bg-card-hover: #162240;
+  --color-border-dark: #1E2D4A;
+  --color-text-main: #F1F5F9;
+  --color-text-sub: #94A3B8;
+  --color-text-muted: #64748B;
+  --font-display: "Outfit", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in-down {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(29, 184, 155, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(29, 184, 155, 0.6); }
+}
+
+@keyframes slide-in-left {
+  0% { opacity: 0; transform: translateX(-40px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-in-right {
+  0% { opacity: 0; transform: translateX(40px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@utility animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+@utility animate-fade-in-down {
+  animation: fade-in-down 0.5s ease-out forwards;
+}
+
+@utility animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@utility animate-shimmer {
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+@utility animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@utility animate-slide-in-left {
+  animation: slide-in-left 0.7s ease-out forwards;
+}
+
+@utility animate-slide-in-right {
+  animation: slide-in-right 0.7s ease-out forwards;
+}
+
+@utility hover-lift {
+  &:hover {
+    transform: translateY(-6px);
+  }
+}
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-main);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background-color: rgba(29, 184, 155, 0.3);
+  color: white;
+}
