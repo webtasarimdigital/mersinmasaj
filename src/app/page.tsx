@@ -21,7 +21,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg-dark)]/80 via-[var(--color-bg-dark)]/60 to-[var(--color-bg-dark)]"></div>
           </div>
 
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 flex flex-col items-center text-center animate-fade-in-up">
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-20 flex flex-col items-center text-center animate-fade-in-up -mt-20 sm:-mt-10">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8">
               <span className="w-2 h-2 rounded-full bg-[var(--color-primary)] animate-pulse"></span>
               <span className="text-white text-sm tracking-widest uppercase font-medium">Mersin'in En İyi Spa Merkezi</span>
