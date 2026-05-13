@@ -52,21 +52,7 @@ export default function Header() {
           </div>
         </Link>
 
-        {/* Mobile Inline Links */}
-        <div className="flex lg:hidden items-center gap-3 overflow-x-auto scrollbar-hide text-xs font-medium text-[var(--color-text-sub)] mx-2">
-          <Link
-            href="/masaj-hizmetleri"
-            className={`whitespace-nowrap transition-colors py-1 ${isActive("/masaj-hizmetleri") ? "text-[var(--color-primary)] font-bold" : "hover:text-[var(--color-primary)]"}`}
-          >
-            Masaj
-          </Link>
-          <Link
-            href="/lazer-epilasyon"
-            className={`whitespace-nowrap transition-colors py-1 ${isActive("/lazer-epilasyon") ? "text-[var(--color-primary)] font-bold" : "hover:text-[var(--color-primary)]"}`}
-          >
-            Lazer Epilasyon
-          </Link>
-        </div>
+        {/* Removed Mobile Inline Links as they clutter the header */}
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex flex-1 justify-center items-center">
