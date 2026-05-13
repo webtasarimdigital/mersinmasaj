@@ -47,7 +47,7 @@ export default function Header() {
           <div className="relative h-10 w-auto md:h-12 flex items-center">
              <span className="text-2xl font-display font-bold tracking-tight text-white flex items-center gap-2">
                 <span className="material-symbols-outlined text-[var(--color-primary)] text-3xl">spa</span>
-                Mersin<span className="text-[var(--color-primary)]">Masaj</span>
+                Mersin<span className="text-[var(--color-primary)]">Severium</span>Masaj
              </span>
           </div>
         </Link>

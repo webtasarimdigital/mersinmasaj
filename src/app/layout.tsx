@@ -16,12 +16,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mersin Masaj Salonu | Profesyonel Masaj & Spa Hizmetleri - Mersin",
+  title: "Mersin Severium Masaj Salonu | Profesyonel Masaj & Spa Hizmetleri - Mersin",
   description:
     "Mersin'in en profesyonel masaj salonu. Klasik masaj, medikal masaj, aromaterapi, sultan masaj, VIP masaj, cilt bakımı ve lazer epilasyon hizmetleri. Uzman terapistlerle rahatlama ve sağlıklı yaşam deneyimi.",
   keywords: [
-    "mersin masaj",
-    "mersin masaj salonu",
+    "mersin severium masaj",
+    "mersin severium masaj salonu",
     "masaj mersin",
     "mersin spa",
     "mersin klasik masaj",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     apple: "/logo.png",
   },
   openGraph: {
-    title: "Mersin Masaj Salonu | Profesyonel Masaj & Spa Hizmetleri",
+    title: "Mersin Severium Masaj Salonu | Profesyonel Masaj & Spa Hizmetleri",
     description:
       "Mersin'in en profesyonel masaj salonu. Uzman terapistlerle klasik masaj, medikal masaj, aromaterapi, sultan masaj ve VIP masaj hizmetleri.",
     images: [{ url: "/logo.png" }],
@@ -74,7 +74,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "HealthAndBeautyBusiness",
-              "name": "Mersin Masaj Salonu",
+              "name": "Mersin Severium Masaj Salonu",
               "image": "https://mersinmasajsalonu.com/logo.png",
               "@id": "https://mersinmasajsalonu.com",
               "url": "https://mersinmasajsalonu.com",

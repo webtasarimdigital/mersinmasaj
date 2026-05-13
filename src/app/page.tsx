@@ -230,7 +230,7 @@ export default function Home() {
             <div className="relative z-10 text-center max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Kendinize Bir İyilik Yapın</h2>
               <p className="text-[var(--color-text-sub)] text-lg mb-10">
-                Bugün randevunuzu alın, Mersin Masaj Salonu'nda yenilenmenin ve huzurun tadını çıkarın.
+                Bugün randevunuzu alın, Mersin Severium Masaj Salonu'nda yenilenmenin ve huzurun tadını çıkarın.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="https://wa.me/905407903333?text=Merhaba,%20randevu%20almak%20istiyorum." target="_blank" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[var(--color-primary)] text-white font-bold text-lg hover:bg-[var(--color-primary-hover)] transition-all shadow-[0_0_20px_rgba(29,184,155,0.3)] hover:-translate-y-1 gap-2">

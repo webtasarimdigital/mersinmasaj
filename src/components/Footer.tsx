@@ -16,7 +16,7 @@ export default function Footer() {
             >
               <span className="text-2xl font-display font-bold tracking-tight text-white flex items-center gap-2">
                 <span className="material-symbols-outlined text-[var(--color-primary)] text-3xl">spa</span>
-                Mersin<span className="text-[var(--color-primary)]">Masaj</span>
+                Mersin<span className="text-[var(--color-primary)]">Severium</span>Masaj
              </span>
             </Link>
             <p className="text-[var(--color-text-sub)] text-sm leading-relaxed max-w-xs">
@@ -133,7 +133,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-[var(--color-border-dark)] pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-[var(--color-text-muted)] gap-4">
-          <p>© {new Date().getFullYear()} Mersin Masaj Salonu. Tüm hakları saklıdır.</p>
+          <p>© {new Date().getFullYear()} Mersin Severium Masaj Salonu. Tüm hakları saklıdır.</p>
           <div className="flex gap-4">
             <Link href="#" className="hover:text-[var(--color-text-sub)] transition-colors">Gizlilik Politikası</Link>
             <Link href="#" className="hover:text-[var(--color-text-sub)] transition-colors">Kullanım Şartları</Link>

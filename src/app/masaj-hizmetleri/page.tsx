@@ -135,7 +135,7 @@ export default function MassagePage() {
               Masaj Hizmetleri
             </h1>
             <p className="text-[var(--color-text-sub)] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-              Dengenizi yeniden kurun. Mersin Masaj Salonu'ndaki uzman terapistlerimizle rahatlama sanatını deneyimleyin.
+              Dengenizi yeniden kurun. Mersin Severium Masaj Salonu'ndaki uzman terapistlerimizle rahatlama sanatını deneyimleyin.
             </p>
             <a href="https://wa.me/905407903333?text=Merhaba,%20randevu%20almak%20istiyorum." target="_blank" className="mt-4 px-10 py-4 bg-[var(--color-primary)] text-white font-bold rounded-full hover:bg-[var(--color-primary-hover)] transition-all hover:scale-105 shadow-[0_0_20px_rgba(29,184,155,0.4)] flex items-center gap-2">
               <span className="material-symbols-outlined">event_available</span>
