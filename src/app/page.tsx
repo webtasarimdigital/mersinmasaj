@@ -55,7 +55,7 @@ export default function Home() {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float">
+          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 animate-float">
              <span className="text-[var(--color-text-muted)] text-xs uppercase tracking-widest">Aşağı Kaydır</span>
              <span className="material-symbols-outlined text-[var(--color-primary)]">keyboard_arrow_down</span>
           </div>

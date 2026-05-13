@@ -61,12 +61,6 @@ export default function Header() {
             Masaj
           </Link>
           <Link
-            href="/cilt-bakimi"
-            className={`whitespace-nowrap transition-colors py-1 ${isActive("/cilt-bakimi") ? "text-[var(--color-primary)] font-bold" : "hover:text-[var(--color-primary)]"}`}
-          >
-            Cilt Bakımı
-          </Link>
-          <Link
             href="/lazer-epilasyon"
             className={`whitespace-nowrap transition-colors py-1 ${isActive("/lazer-epilasyon") ? "text-[var(--color-primary)] font-bold" : "hover:text-[var(--color-primary)]"}`}
           >
@@ -85,12 +79,6 @@ export default function Header() {
               href="/masaj-hizmetleri"
             >
               Masaj Hizmetleri
-            </Link>
-            <Link
-              className={getLinkClassName("/cilt-bakimi")}
-              href="/cilt-bakimi"
-            >
-              Cilt Bakımı
             </Link>
             <Link
               className={getLinkClassName("/lazer-epilasyon")}
@@ -140,13 +128,6 @@ export default function Header() {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Masaj Hizmetleri
-          </Link>
-          <Link
-            className={getLinkClassName("/cilt-bakimi")}
-            href="/cilt-bakimi"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Cilt Bakımı
           </Link>
           <Link
             className={getLinkClassName("/lazer-epilasyon")}
