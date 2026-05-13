@@ -230,6 +230,105 @@ export default function MassagePage() {
           </div>
         </section>
 
+        {/* Neden Düzenli Masaj */}
+        <section className="py-20 px-6 lg:px-20 relative bg-gradient-to-b from-[var(--color-bg-dark)] to-[var(--color-bg-card)] border-t border-[var(--color-border-dark)]">
+           <div className="max-w-7xl mx-auto">
+              <div className="flex flex-col lg:flex-row gap-16 items-center">
+                 <div className="w-full lg:w-1/2">
+                    <h2 className="text-[var(--color-primary)] font-bold tracking-widest text-sm uppercase mb-3">Sağlıklı Yaşam</h2>
+                    <h3 className="text-3xl md:text-5xl font-black text-white mb-6">Neden Düzenli Masaj Yaptırmalısınız?</h3>
+                    <p className="text-[var(--color-text-sub)] text-lg mb-8 leading-relaxed">
+                       Masaj sadece lüks bir aktivite değil, aynı zamanda beden ve ruh sağlığınız için gerekli bir bakımdır. Mersin Severium Masaj Salonu'nda alacağınız düzenli terapilerin hayat kalitenize kattığı faydalar saymakla bitmez.
+                    </p>
+                    
+                    <ul className="space-y-4">
+                       <li className="flex items-start gap-4">
+                          <div className="w-8 h-8 rounded-full bg-[var(--color-primary)]/20 flex items-center justify-center shrink-0 mt-1">
+                             <span className="material-symbols-outlined text-[var(--color-primary)] text-sm">favorite</span>
+                          </div>
+                          <div>
+                             <h4 className="text-white font-bold text-lg">Kan Dolaşımını Hızlandırır</h4>
+                             <p className="text-[var(--color-text-muted)]">Dokulara daha fazla oksijen gitmesini sağlayarak hücresel yenilenmeyi destekler.</p>
+                          </div>
+                       </li>
+                       <li className="flex items-start gap-4">
+                          <div className="w-8 h-8 rounded-full bg-[var(--color-primary)]/20 flex items-center justify-center shrink-0 mt-1">
+                             <span className="material-symbols-outlined text-[var(--color-primary)] text-sm">mood</span>
+                          </div>
+                          <div>
+                             <h4 className="text-white font-bold text-lg">Stres ve Anksiyeteyi Azaltır</h4>
+                             <p className="text-[var(--color-text-muted)]">Kortizol (stres hormonu) seviyesini düşürürken, endorfin ve serotonin salgısını artırarak mutluluk verir.</p>
+                          </div>
+                       </li>
+                       <li className="flex items-start gap-4">
+                          <div className="w-8 h-8 rounded-full bg-[var(--color-primary)]/20 flex items-center justify-center shrink-0 mt-1">
+                             <span className="material-symbols-outlined text-[var(--color-primary)] text-sm">airline_seat_flat</span>
+                          </div>
+                          <div>
+                             <h4 className="text-white font-bold text-lg">Uyku Kalitesini Artırır</h4>
+                             <p className="text-[var(--color-text-muted)]">Gevşemiş kaslar ve arınmış bir zihin ile derin ve dinlendirici bir uyku çekmenize yardımcı olur.</p>
+                          </div>
+                       </li>
+                       <li className="flex items-start gap-4">
+                          <div className="w-8 h-8 rounded-full bg-[var(--color-primary)]/20 flex items-center justify-center shrink-0 mt-1">
+                             <span className="material-symbols-outlined text-[var(--color-primary)] text-sm">health_and_safety</span>
+                          </div>
+                          <div>
+                             <h4 className="text-white font-bold text-lg">Bağışıklık Sistemini Güçlendirir</h4>
+                             <p className="text-[var(--color-text-muted)]">Lenfatik sistemi uyararak vücudun toksinlerden arınma sürecini hızlandırır.</p>
+                          </div>
+                       </li>
+                    </ul>
+                 </div>
+                 
+                 <div className="w-full lg:w-1/2 relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-primary)] to-[#4ade80] rounded-[3rem] rotate-3 opacity-20 blur-xl"></div>
+                    <img src="/images/spa-welcome.webp" alt="Mersin Masaj Salonu Deneyimi" className="relative w-full h-[500px] object-cover rounded-[3rem] shadow-2xl border border-white/10" />
+                    
+                    <div className="absolute -bottom-8 -left-8 bg-[var(--color-bg-dark)] p-6 rounded-3xl border border-[var(--color-border-dark)] shadow-xl hidden md:block">
+                       <div className="flex items-center gap-4">
+                          <div className="w-16 h-16 rounded-full bg-[var(--color-primary)]/20 flex items-center justify-center">
+                             <span className="material-symbols-outlined text-[var(--color-primary)] text-3xl">verified_user</span>
+                          </div>
+                          <div>
+                             <h5 className="text-white font-bold">%100 Memnuniyet</h5>
+                             <p className="text-[var(--color-text-muted)] text-sm">Garantili Hizmet</p>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </section>
+
+        {/* Massage FAQ Section */}
+        <section className="py-24 px-6 lg:px-20 relative">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-[var(--color-primary)] font-bold tracking-widest text-sm uppercase mb-3">Bilmeniz Gerekenler</h2>
+              <h3 className="text-3xl md:text-5xl font-black text-white">Masaj Öncesi ve Sonrası</h3>
+              <div className="w-24 h-1 bg-[var(--color-primary)] mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div className="space-y-6">
+               <div className="bg-[var(--color-bg-card)] border border-[var(--color-border-dark)] rounded-2xl p-6">
+                 <h4 className="text-xl font-bold text-[var(--color-primary)] mb-3">Masaja tok karnına mı gelinmeli?</h4>
+                 <p className="text-[var(--color-text-sub)]">Masajdan hemen önce ağır yemekler yemekten kaçınmalısınız. Terapi esnasında rahat edebilmeniz için en az 1.5 - 2 saat öncesinde yemeğinizi yemiş olmanız idealdir.</p>
+               </div>
+               
+               <div className="bg-[var(--color-bg-card)] border border-[var(--color-border-dark)] rounded-2xl p-6">
+                 <h4 className="text-xl font-bold text-[var(--color-primary)] mb-3">Masaj sonrası neden bol su içmeliyim?</h4>
+                 <p className="text-[var(--color-text-sub)]">Masaj, kaslarınızda birikmiş olan laktik asit ve toksinlerin serbest kalmasını sağlar. Seans sonrasında bol su tüketerek bu toksinlerin vücuttan atılımını hızlandırmış olursunuz.</p>
+               </div>
+
+               <div className="bg-[var(--color-bg-card)] border border-[var(--color-border-dark)] rounded-2xl p-6">
+                 <h4 className="text-xl font-bold text-[var(--color-primary)] mb-3">Spor yaptıktan hemen sonra masaj yaptırılır mı?</h4>
+                 <p className="text-[var(--color-text-sub)]">Spor sonrası hafif bir ısınma/soğuma sürecinden sonra (yaklaşık 1-2 saat sonra) masaj yaptırmak kas ağrılarını ve tutulmaları azaltmak için çok etkilidir.</p>
+               </div>
+            </div>
+          </div>
+        </section>
+
         {/* Aggressive CTA Banner */}
         <section className="py-12 bg-gradient-to-r from-[var(--color-primary)] via-[var(--color-primary-hover)] to-[var(--color-bg-card)] border-y border-[var(--color-border-dark)] relative overflow-hidden">
            <div className="absolute inset-0 bg-[url('/images/aroma-terapi.webp')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>

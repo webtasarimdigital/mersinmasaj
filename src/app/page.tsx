@@ -221,7 +221,174 @@ export default function Home() {
            </div>
         </section>
 
+        {/* Spa Ritual Process */}
+        <section className="py-24 px-6 lg:px-20 relative">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-[var(--color-primary)] font-bold tracking-widest text-sm uppercase mb-3">Deneyim</h2>
+              <h3 className="text-3xl md:text-5xl font-black text-white">Spa Ritüelimiz</h3>
+              <div className="w-24 h-1 bg-[var(--color-primary)] mx-auto mt-6 rounded-full"></div>
+              <p className="text-[var(--color-text-sub)] mt-6 max-w-2xl mx-auto text-lg">Salonumuzdan içeri adım attığınız andan itibaren, tamamen size özel tasarlanmış bir rahatlama yolculuğuna çıkacaksınız.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+               <div className="bg-[var(--color-bg-card)] p-8 rounded-3xl border border-[var(--color-border-dark)] relative group hover:-translate-y-2 transition-transform duration-300">
+                  <div className="text-[var(--color-primary)]/10 text-8xl font-black absolute top-4 right-4 z-0 group-hover:text-[var(--color-primary)]/20 transition-colors">01</div>
+                  <div className="relative z-10">
+                    <span className="material-symbols-outlined text-[var(--color-primary)] text-4xl mb-6">local_cafe</span>
+                    <h4 className="text-xl font-bold text-white mb-3">Karşılama</h4>
+                    <p className="text-[var(--color-text-sub)]">Güler yüzlü ekibimiz sizi bitki çayı veya detoks suyu ikramımızla karşılar. İhtiyaçlarınızı dinleyip, size en uygun masaj türünü belirleriz.</p>
+                  </div>
+               </div>
+               <div className="bg-[var(--color-bg-card)] p-8 rounded-3xl border border-[var(--color-border-dark)] relative group hover:-translate-y-2 transition-transform duration-300">
+                  <div className="text-[var(--color-primary)]/10 text-8xl font-black absolute top-4 right-4 z-0 group-hover:text-[var(--color-primary)]/20 transition-colors">02</div>
+                  <div className="relative z-10">
+                    <span className="material-symbols-outlined text-[var(--color-primary)] text-4xl mb-6">bathtub</span>
+                    <h4 className="text-xl font-bold text-white mb-3">Hazırlık</h4>
+                    <p className="text-[var(--color-text-sub)]">Sterilize edilmiş, loş aydınlatmalı ve dinlendirici müziklerin çaldığı özel odanıza alınırsınız. Temiz havlu ve peştemalleriniz hazırdır.</p>
+                  </div>
+               </div>
+               <div className="bg-[var(--color-bg-card)] p-8 rounded-3xl border border-[var(--color-border-dark)] relative group hover:-translate-y-2 transition-transform duration-300">
+                  <div className="text-[var(--color-primary)]/10 text-8xl font-black absolute top-4 right-4 z-0 group-hover:text-[var(--color-primary)]/20 transition-colors">03</div>
+                  <div className="relative z-10">
+                    <span className="material-symbols-outlined text-[var(--color-primary)] text-4xl mb-6">spa</span>
+                    <h4 className="text-xl font-bold text-white mb-3">Terapi</h4>
+                    <p className="text-[var(--color-text-sub)]">Uzman terapistimiz, belirlediğiniz tekniklerle, kaslarınızı gevşeten ve zihninizi arındıran profesyonel masaj seansına başlar.</p>
+                  </div>
+               </div>
+               <div className="bg-[var(--color-bg-card)] p-8 rounded-3xl border border-[var(--color-border-dark)] relative group hover:-translate-y-2 transition-transform duration-300">
+                  <div className="text-[var(--color-primary)]/10 text-8xl font-black absolute top-4 right-4 z-0 group-hover:text-[var(--color-primary)]/20 transition-colors">04</div>
+                  <div className="relative z-10">
+                    <span className="material-symbols-outlined text-[var(--color-primary)] text-4xl mb-6">self_improvement</span>
+                    <h4 className="text-xl font-bold text-white mb-3">Dinlenme</h4>
+                    <p className="text-[var(--color-text-sub)]">Seans bitiminde anında kalkmak zorunda değilsiniz. Dinlenme alanımızda sıcak içeceğinizi yudumlayarak rahatlamanın tadını çıkarabilirsiniz.</p>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials */}
+        <section className="py-24 px-6 lg:px-20 bg-[var(--color-bg-dark)] border-y border-[var(--color-border-dark)] relative overflow-hidden">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-[var(--color-primary)] font-bold tracking-widest text-sm uppercase mb-3">Müşteri Yorumları</h2>
+              <h3 className="text-3xl md:text-5xl font-black text-white">Sizden Gelenler</h3>
+              <div className="w-24 h-1 bg-[var(--color-primary)] mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div className="flex overflow-x-auto snap-x snap-mandatory pb-8 scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0 gap-6">
+              <div className="snap-center min-w-[85vw] sm:min-w-[400px] md:w-1/3 bg-[var(--color-bg-card)] p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                <div>
+                  <div className="flex gap-1 text-[#F4C025] mb-6 text-xl">
+                    <span className="material-symbols-outlined fill-current">star</span>
+                    <span className="material-symbols-outlined fill-current">star</span>
+                    <span className="material-symbols-outlined fill-current">star</span>
+                    <span className="material-symbols-outlined fill-current">star</span>
+                    <span className="material-symbols-outlined fill-current">star</span>
+                  </div>
+                  <p className="text-white/90 text-lg leading-relaxed mb-6 italic">"Mersin'de birçok yeri denedim ama burası gerçekten bambaşka. Özellikle Medikal Masaj kronik sırt ağrılarıma çok iyi geldi. Ortam inanılmaz temiz ve personel çok ilgili."</p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[var(--color-primary)]/20 flex items-center justify-center font-bold text-[var(--color-primary)]">A.K</div>
+                  <div>
+                    <h5 className="text-white font-bold">Ahmet K.</h5>
+                    <span className="text-[var(--color-text-muted)] text-sm">Düzenli Müşteri</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="snap-center min-w-[85vw] sm:min-w-[400px] md:w-1/3 bg-[var(--color-bg-card)] p-8 rounded-3xl border border-[var(--color-primary)]/20 shadow-[0_0_30px_rgba(29,184,155,0.1)] flex flex-col justify-between relative">
+                <div className="absolute top-0 right-8 -mt-4 bg-[var(--color-primary)] text-white text-xs font-bold px-3 py-1 rounded-full">Popüler</div>
+                <div>
+                  <div className="flex gap-1 text-[#F4C025] mb-6 text-xl">
+                    <span className="material-symbols-outlined fill-current">star</span>
+                    <span className="material-symbols-outlined fill-current">star</span>
+                    <span className="material-symbols-outlined fill-current">star</span>
+                    <span className="material-symbols-outlined fill-current">star</span>
+                    <span className="material-symbols-outlined fill-current">star</span>
+                  </div>
+                  <p className="text-white/90 text-lg leading-relaxed mb-6 italic">"Eşimle birlikte VIP odada masaj aldık. Jakuzi keyfi ve ardından uygulanan Aromaterapi masajı tüm haftanın stresini sildi süpürdü. Kesinlikle tavsiye ediyorum."</p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#F4C025]/20 flex items-center justify-center font-bold text-[#F4C025]">S.Y</div>
+                  <div>
+                    <h5 className="text-white font-bold">Seda Y.</h5>
+                    <span className="text-[var(--color-text-muted)] text-sm">VIP Üye</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="snap-center min-w-[85vw] sm:min-w-[400px] md:w-1/3 bg-[var(--color-bg-card)] p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                <div>
+                  <div className="flex gap-1 text-[#F4C025] mb-6 text-xl">
+                    <span className="material-symbols-outlined fill-current">star</span>
+                    <span className="material-symbols-outlined fill-current">star</span>
+                    <span className="material-symbols-outlined fill-current">star</span>
+                    <span className="material-symbols-outlined fill-current">star</span>
+                    <span className="material-symbols-outlined fill-current">star</span>
+                  </div>
+                  <p className="text-white/90 text-lg leading-relaxed mb-6 italic">"İş yorgunluğundan boynumu çeviremiyordum. Bir seans klasik masaj bile mucizeler yarattı. İçerideki müzik ve atmosfer çok dinlendirici. Teşekkürler Mersin Severium."</p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[var(--color-primary)]/20 flex items-center justify-center font-bold text-[var(--color-primary)]">M.T</div>
+                  <div>
+                    <h5 className="text-white font-bold">Murat T.</h5>
+                    <span className="text-[var(--color-text-muted)] text-sm">Müşteri</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-24 px-6 lg:px-20 relative bg-[var(--color-bg-card)]/50">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-[var(--color-primary)] font-bold tracking-widest text-sm uppercase mb-3">Soru & Cevap</h2>
+              <h3 className="text-3xl md:text-5xl font-black text-white">Sıkça Sorulan Sorular</h3>
+              <div className="w-24 h-1 bg-[var(--color-primary)] mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div className="space-y-6">
+               <div className="bg-[var(--color-bg-dark)] border border-[var(--color-border-dark)] rounded-2xl p-6 hover:border-[var(--color-primary)]/50 transition-colors">
+                 <h4 className="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                   <span className="material-symbols-outlined text-[var(--color-primary)]">help</span>
+                   Masaja gelirken ne giymeliyim?
+                 </h4>
+                 <p className="text-[var(--color-text-sub)] pl-9">Rahat kıyafetler tercih edebilirsiniz. Masaj esnasında kullanmanız için sterilize edilmiş tek kullanımlık iç çamaşırı, peştemal ve havlular salonumuz tarafından size temin edilmektedir.</p>
+               </div>
+               
+               <div className="bg-[var(--color-bg-dark)] border border-[var(--color-border-dark)] rounded-2xl p-6 hover:border-[var(--color-primary)]/50 transition-colors">
+                 <h4 className="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                   <span className="material-symbols-outlined text-[var(--color-primary)]">help</span>
+                   Hangi masajı seçeceğime nasıl karar verebilirim?
+                 </h4>
+                 <p className="text-[var(--color-text-sub)] pl-9">Eğer ilk defa masaj yaptırıyorsanız veya hafif bir rahatlama arıyorsanız Klasik Masajı önerebiliriz. Kronik ağrılarınız varsa Medikal Masaj, tamamen stresten arınmak istiyorsanız Aromaterapi Masajı idealdir. Geldiğinizde uzmanlarımız da sizi yönlendirecektir.</p>
+               </div>
+
+               <div className="bg-[var(--color-bg-dark)] border border-[var(--color-border-dark)] rounded-2xl p-6 hover:border-[var(--color-primary)]/50 transition-colors">
+                 <h4 className="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                   <span className="material-symbols-outlined text-[var(--color-primary)]">help</span>
+                   Randevusuz gelebilir miyim?
+                 </h4>
+                 <p className="text-[var(--color-text-sub)] pl-9">Size en iyi ve beklemesiz hizmeti sunabilmemiz için randevu ile çalışıyoruz. Gelmeden önce WhatsApp üzerinden veya telefonla bizi arayarak yerinizi ayırtmanızı önemle rica ederiz.</p>
+               </div>
+
+               <div className="bg-[var(--color-bg-dark)] border border-[var(--color-border-dark)] rounded-2xl p-6 hover:border-[var(--color-primary)]/50 transition-colors">
+                 <h4 className="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                   <span className="material-symbols-outlined text-[var(--color-primary)]">help</span>
+                   Hamileler masaj yaptırabilir mi?
+                 </h4>
+                 <p className="text-[var(--color-text-sub)] pl-9">Hamileliğin ilk 3 ayında masaj tavsiye etmiyoruz. 3. aydan sonra doktorunuzun onayıyla birlikte uzman terapistlerimiz tarafından hafif baskılı özel masajlar uygulanabilir.</p>
+               </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
+
         <section className="py-24 px-6 lg:px-20 relative">
           <div className="max-w-5xl mx-auto bg-gradient-to-br from-[var(--color-bg-card)] to-[var(--color-bg-dark)] rounded-3xl p-10 md:p-16 border border-[var(--color-border-dark)] relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
             <div className="absolute inset-0 bg-[url('/images/spa-relax-green.webp')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
