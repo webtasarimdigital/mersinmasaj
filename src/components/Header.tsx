@@ -67,6 +67,12 @@ export default function Header() {
               Masaj Hizmetleri
             </Link>
             <Link
+              className={getLinkClassName("/cilt-bakimi")}
+              href="/cilt-bakimi"
+            >
+              Cilt Bakımı
+            </Link>
+            <Link
               className={getLinkClassName("/lazer-epilasyon")}
               href="/lazer-epilasyon"
             >
@@ -114,6 +120,13 @@ export default function Header() {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Masaj Hizmetleri
+          </Link>
+          <Link
+            className={getLinkClassName("/cilt-bakimi")}
+            href="/cilt-bakimi"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Cilt Bakımı
           </Link>
           <Link
             className={getLinkClassName("/lazer-epilasyon")}

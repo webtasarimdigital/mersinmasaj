@@ -57,6 +57,13 @@ export default function Footer() {
               </Link>
               <Link
                 className="text-[var(--color-text-sub)] text-sm hover:text-[var(--color-primary)] hover:translate-x-1 transition-all flex items-center gap-2"
+                href="/cilt-bakimi"
+              >
+                 <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] opacity-50"></span>
+                Cilt Bakımı
+              </Link>
+              <Link
+                className="text-[var(--color-text-sub)] text-sm hover:text-[var(--color-primary)] hover:translate-x-1 transition-all flex items-center gap-2"
                 href="/lazer-epilasyon"
               >
                  <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] opacity-50"></span>

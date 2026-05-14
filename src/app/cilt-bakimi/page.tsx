@@ -3,45 +3,46 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useState } from "react";
+import Link from "next/link";
 
 const services = [
   {
-    id: "buz",
-    title: "Buz Lazer",
-    description: "Yeni nesil soğutma teknolojisi ile acısız, ağrısız ve son derece konforlu epilasyon deneyimi. Tüm cilt ve kıl tiplerinde etkilidir.",
-    features: ["Acısız ve ağrısız uygulama", "Hızlı sonuç", "Dört mevsim uygulanabilir"],
-    duration: "Bölgeye Göre",
-    image: "/images/buz-lazer.webp",
-    message: "Buz Lazer Epilasyon hakkında bilgi almak istiyorum.",
-    introTitle: "Konforlu ve Kesin Çözüm",
-    introDescription: "Buz lazerin gelişmiş soğutma başlığı sayesinde epilasyon artık bir acı değil, konforlu bir bakım rutinine dönüşüyor."
-  },
-  {
-    id: "tum-vucut",
-    title: "Tüm Vücut Lazer",
-    description: "İstenmeyen tüylerden kalıcı olarak kurtulmak için en ekonomik ve etkili çözüm. Erkek ve kadınlara özel paket programlar.",
-    features: ["Ekonomik paketler", "Kalıcı pürüzsüzlük", "Uzman estetisyenler"],
+    id: "hydrafacial",
+    title: "HydraFacial",
+    description: "Amerikan cilt bakım teknolojisi ile cildinizi derinlemesine temizler, soyar, yeniler ve nemlendirir. Siyah nokta ve akne problemlerine anında çözüm sunar.",
+    features: ["Derinlemesine temizlik", "Anında parlaklık", "Acısız ve konforlu"],
     duration: "45-60 Dakika",
-    image: "/images/tum-vucut-lazer.webp",
-    message: "Tüm Vücut Lazer Epilasyon paketleri hakkında bilgi almak istiyorum.",
-    introTitle: "Pürüzsüz Bir Cilde Merhaba",
-    introDescription: "Tüm vücut paketlerimizle istenmeyen tüylerle vedalaşın. Size özel planlanmış seanslarla kalıcı sonuçlara ulaşın."
+    image: "/images/aroma-terapi.webp",
+    message: "HydraFacial cilt bakımı hakkında bilgi almak istiyorum.",
+    introTitle: "Işıl Işıl Bir Cilt",
+    introDescription: "Cildinizin ihtiyacı olan nemi ve vitaminleri kazandıran, yaşlanma karşıtı ve yenileyici Amerikan cilt bakımı ile tanışın."
   },
   {
-    id: "bolgesel",
-    title: "Bölgesel Lazer",
-    description: "Yüz, koltuk altı, bikini bölgesi, sırt veya bacak gibi spesifik alanlar için hedefe yönelik etkili epilasyon hizmeti.",
-    features: ["İhtiyaca özel planlama", "Kısa seans süreleri", "Yüksek başarı oranı"],
-    duration: "10-30 Dakika",
-    image: "/images/bolgesel-lazer.webp",
-    message: "Bölgesel Lazer Epilasyon hakkında bilgi almak istiyorum.",
-    introTitle: "Sadece İhtiyacınız Olan Bölgeye",
-    introDescription: "Rahatsızlık duyduğunuz belirli bölgeler için hızlı ve etkili çözümler sunuyoruz. Kendi paketinizi kendiniz oluşturun."
+    id: "antiaging",
+    title: "Anti-Aging Bakım",
+    description: "İnce kırışıklıklar, sarkmalar ve cilt tonu eşitsizlikleri için özel olarak formüle edilmiş serumlar ve radyofrekans teknolojileri kullanılarak yapılan lifting etkili bakımdır.",
+    features: ["Lifting (kaldırma) etkisi", "Kollajen üretimini tetikler", "Genç ve taze görünüm"],
+    duration: "60 Dakika",
+    image: "/images/soft-masaj.webp",
+    message: "Anti-Aging Cilt Bakımı hakkında bilgi almak istiyorum.",
+    introTitle: "Zamana Meydan Okuyun",
+    introDescription: "Cilt elastikiyetini geri kazandıran profesyonel anti-aging protokollerimizle yıllara meydan okuyan genç bir görünüme sahip olun."
+  },
+  {
+    id: "akne",
+    title: "Akne ve Leke Tedavisi",
+    description: "Aktif aknelerin kurutulması, sivilce izlerinin ve güneş lekelerinin giderilmesi için medikal peeling ve özel solüsyonlarla uygulanan tedavi edici protokoldür.",
+    features: ["Leke açıcı etki", "Sebum (yağ) dengesi", "Gözenek sıkılaştırma"],
+    duration: "45-60 Dakika",
+    image: "/images/klasik-masaj.webp",
+    message: "Akne ve Leke Tedavisi hakkında bilgi almak istiyorum.",
+    introTitle: "Kusursuz Bir Ten",
+    introDescription: "Akne ve lekeler kaderiniz değil. Doğru medikal ürün ve cihaz kombinasyonlarıyla pürüzsüz bir cilde kavuşmanız için yanınızdayız."
   }
 ];
 
-export default function LaserPage() {
-  const [activeTab, setActiveTab] = useState("buz");
+export default function SkinCarePage() {
+  const [activeTab, setActiveTab] = useState("hydrafacial");
   const activeService = services.find(s => s.id === activeTab) || services[0];
 
   return (
@@ -49,24 +50,25 @@ export default function LaserPage() {
       <Header />
       
       <main className="flex-1">
+        {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[500px] w-full flex items-center justify-center pt-20">
           <div className="absolute inset-0 z-0">
              <div 
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: 'url("/images/lazer-epilasyon-hero.webp")' }}
+                style={{ backgroundImage: 'url("/images/spa-relax-green.webp")' }}
              ></div>
              <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg-dark)]/90 via-[var(--color-bg-dark)]/70 to-[var(--color-bg-dark)]"></div>
           </div>
           
           <div className="relative z-10 flex flex-col gap-6 items-center justify-center px-4 max-w-4xl text-center animate-fade-in-up">
             <span className="text-[var(--color-primary)] text-sm uppercase tracking-widest font-bold">
-              Kalıcı Pürüzsüzlük
+              Kusursuz Güzellik
             </span>
             <h1 className="text-white text-5xl md:text-7xl font-black leading-tight">
-              Lazer Epilasyon
+              Cilt Bakımı
             </h1>
             <p className="text-[var(--color-text-sub)] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-              Son teknoloji cihazlarımız ve uzman estetisyenlerimizle istenmeyen tüylere acısız ve kalıcı olarak veda edin.
+              Cildinizin ihtiyacı olan profesyonel dokunuşlar. Nem dengesi, derinlemesine temizlik ve yaşlanma karşıtı tedavilerle cildinizi yeniden canlandırın.
             </p>
           </div>
         </section>
@@ -99,7 +101,7 @@ export default function LaserPage() {
         <section className="py-16 px-6 lg:px-20">
           <div key={activeTab} className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <span className="material-symbols-outlined text-[var(--color-primary)] text-5xl mb-6 opacity-80">
-              flare
+              face_retouching_natural
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               {activeService.introTitle}
@@ -162,46 +164,46 @@ export default function LaserPage() {
            <div className="max-w-7xl mx-auto">
               <div className="flex flex-col lg:flex-row gap-16 items-center">
                  <div className="w-full lg:w-1/2">
-                    <h2 className="text-[var(--color-primary)] font-bold tracking-widest text-sm uppercase mb-3">Teknoloji & Güven</h2>
-                    <h3 className="text-3xl md:text-5xl font-black text-white mb-6">Neden Bizi Tercih Etmelisiniz?</h3>
+                    <h2 className="text-[var(--color-primary)] font-bold tracking-widest text-sm uppercase mb-3">Uzman Bakım</h2>
+                    <h3 className="text-3xl md:text-5xl font-black text-white mb-6">Neden Profesyonel Cilt Bakımı?</h3>
                     <p className="text-[var(--color-text-sub)] text-lg mb-8 leading-relaxed">
-                       Mersin'de lazer epilasyon denilince akla gelen ilk merkezlerden biri olarak, FDA onaylı son teknoloji cihazlarımız ve alanında uzman ekibimizle %100 memnuniyet garantili hizmet sunuyoruz.
+                       Evde yaptığınız bakımlar cildin sadece en üst katmanına (epidermis) ulaşırken, klinik ortamda yapılan medikal cilt bakımları dermis tabakasına inerek kalıcı ve derinlemesine çözümler sunar.
                     </p>
                     
                     <ul className="space-y-4">
                        <li className="flex items-start gap-4">
                           <div className="w-8 h-8 rounded-full bg-[var(--color-primary)]/20 flex items-center justify-center shrink-0 mt-1">
-                             <span className="material-symbols-outlined text-[var(--color-primary)] text-sm">ac_unit</span>
+                             <span className="material-symbols-outlined text-[var(--color-primary)] text-sm">water_drop</span>
                           </div>
                           <div>
-                             <h4 className="text-white font-bold text-lg">Gelişmiş Soğutma Sistemi</h4>
-                             <p className="text-[var(--color-text-muted)]">Cildi -3 dereceye kadar soğutan özel başlıklarımız sayesinde acı ve yanık riski tamamen ortadan kalkar.</p>
+                             <h4 className="text-white font-bold text-lg">Derinlemesine Temizlik</h4>
+                             <p className="text-[var(--color-text-muted)]">Cilt altındaki siyah nokta (komedon), yağ butonları ve birikmiş kirlerden cildi tamamen arındırır.</p>
                           </div>
                        </li>
                        <li className="flex items-start gap-4">
                           <div className="w-8 h-8 rounded-full bg-[var(--color-primary)]/20 flex items-center justify-center shrink-0 mt-1">
-                             <span className="material-symbols-outlined text-[var(--color-primary)] text-sm">timer</span>
+                             <span className="material-symbols-outlined text-[var(--color-primary)] text-sm">healing</span>
                           </div>
                           <div>
-                             <h4 className="text-white font-bold text-lg">Hızlı ve Etkili Sonuç</h4>
-                             <p className="text-[var(--color-text-muted)]">Geniş spot alanına sahip başlıklarla seans süreleri yarı yarıya kısalırken, etki oranı maksimize edilir.</p>
+                             <h4 className="text-white font-bold text-lg">Hücre Yenilenmesi</h4>
+                             <p className="text-[var(--color-text-muted)]">Cilt yüzeyindeki ölü hücreler uzaklaştırılarak, yeni ve sağlıklı cilt dokusunun oluşumu tetiklenir.</p>
                           </div>
                        </li>
                        <li className="flex items-start gap-4">
                           <div className="w-8 h-8 rounded-full bg-[var(--color-primary)]/20 flex items-center justify-center shrink-0 mt-1">
-                             <span className="material-symbols-outlined text-[var(--color-primary)] text-sm">verified</span>
+                             <span className="material-symbols-outlined text-[var(--color-primary)] text-sm">health_and_safety</span>
                           </div>
                           <div>
-                             <h4 className="text-white font-bold text-lg">Her Cilt Tipine Uygunluk</h4>
-                             <p className="text-[var(--color-text-muted)]">Bronz ten dahil 4 mevsim boyunca tüm cilt ve kıl tiplerinde güvenle uygulanabilen teknoloji.</p>
+                             <h4 className="text-white font-bold text-lg">Yaşlanma Karşıtı Koruma</h4>
+                             <p className="text-[var(--color-text-muted)]">Kolajen ve elastin üretimi desteklenerek kırışıklık oluşumu engellenir, cilt sıkılaşır.</p>
                           </div>
                        </li>
                     </ul>
                  </div>
                  
                  <div className="w-full lg:w-1/2 relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-primary)] to-[#4ade80] rounded-[3rem] rotate-3 opacity-20 blur-xl"></div>
-                    <img src="/images/lazer-epilasyon-hero.webp" alt="Mersin Lazer Epilasyon Teknolojisi" className="relative w-full h-[500px] object-cover rounded-[3rem] shadow-2xl border border-white/10" />
+                    <div className="absolute inset-0 bg-gradient-to-l from-[var(--color-primary)] to-[#4ade80] rounded-[3rem] rotate-3 opacity-20 blur-xl"></div>
+                    <img src="/images/aroma-terapi.webp" alt="Profesyonel Cilt Bakımı Mersin" className="relative w-full h-[500px] object-cover rounded-[3rem] shadow-2xl border border-white/10" />
                  </div>
               </div>
            </div>
@@ -220,25 +222,25 @@ export default function LaserPage() {
                <div className="bg-[var(--color-bg-dark)] border border-[var(--color-border-dark)] rounded-2xl p-6 hover:border-[var(--color-primary)]/50 transition-colors">
                  <h4 className="text-xl font-bold text-white mb-3 flex items-center gap-3">
                    <span className="material-symbols-outlined text-[var(--color-primary)]">help</span>
-                   Lazer epilasyon kaç seans sürer?
+                   Cilt bakımı ne sıklıkla yapılmalıdır?
                  </h4>
-                 <p className="text-[var(--color-text-sub)] pl-9">Kişinin hormonal yapısı, kıl kökü derinliği ve cilt rengine göre değişmekle birlikte, ortalama olarak 6 ile 8 seans arasında %90'a varan kalıcı sonuçlar elde edilmektedir.</p>
+                 <p className="text-[var(--color-text-sub)] pl-9">Normal bir cilt yapısına sahipseniz hücre yenilenme döngüsü olan ortalama 28 günde bir profesyonel cilt bakımı yaptırmanız tavsiye edilir. Ancak akneli veya problemli ciltlerde uzmanımız bu süreyi 15 güne indirebilir.</p>
                </div>
                
                <div className="bg-[var(--color-bg-dark)] border border-[var(--color-border-dark)] rounded-2xl p-6 hover:border-[var(--color-primary)]/50 transition-colors">
                  <h4 className="text-xl font-bold text-white mb-3 flex items-center gap-3">
                    <span className="material-symbols-outlined text-[var(--color-primary)]">help</span>
-                   Seans öncesi kıllar nasıl temizlenmelidir?
+                   İşlem sonrası güneşe çıkabilir miyim?
                  </h4>
-                 <p className="text-[var(--color-text-sub)] pl-9">İşlemden 1 gün önce (24 saat) tüylerinizi sadece jilet kullanarak kısaltmanız gerekmektedir. Ağda, cımbız veya epilatör gibi kökten alma işlemleri kesinlikle YAPILMAMALIDIR.</p>
+                 <p className="text-[var(--color-text-sub)] pl-9">Derinlemesine temizlik ve peeling işlemlerinden sonra cildiniz hassaslaşacağı için doğrudan güneşe maruz kalmamalısınız. Bakım sonunda uzmanlarımız tarafından cildinize yüksek faktörlü güneş koruyucu uygulanacaktır.</p>
                </div>
 
                <div className="bg-[var(--color-bg-dark)] border border-[var(--color-border-dark)] rounded-2xl p-6 hover:border-[var(--color-primary)]/50 transition-colors">
                  <h4 className="text-xl font-bold text-white mb-3 flex items-center gap-3">
                    <span className="material-symbols-outlined text-[var(--color-primary)]">help</span>
-                   Yaz aylarında lazer epilasyon yapılır mı?
+                   İşlem sırasında acı hisseder miyim?
                  </h4>
-                 <p className="text-[var(--color-text-sub)] pl-9">Evet, yeni nesil Buz Lazer teknolojimiz sayesinde yaz aylarında ve bronz tende bile güvenle işlem yapılabilmektedir. Güneşlenmeden hemen sonraki ilk birkaç gün dışında her zaman uygundur.</p>
+                 <p className="text-[var(--color-text-sub)] pl-9">Yeni nesil Amerikan cilt bakımı cihazları ve HydraFacial teknolojisi sayesinde işlemlerimiz tamamen acısız ve konforludur. Komedon temizliğinde bile minimum hassasiyet yaşarsınız.</p>
                </div>
             </div>
           </div>
@@ -246,15 +248,15 @@ export default function LaserPage() {
 
         {/* Aggressive CTA Banner */}
         <section className="py-12 bg-gradient-to-r from-[var(--color-primary)] via-[var(--color-primary-hover)] to-[var(--color-bg-card)] border-y border-[var(--color-border-dark)] relative overflow-hidden">
-           <div className="absolute inset-0 bg-[url('/images/buz-lazer.webp')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+           <div className="absolute inset-0 bg-[url('/images/soft-masaj.webp')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
            <div className="max-w-7xl mx-auto px-6 lg:px-20 relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
-                 <h3 className="text-2xl md:text-3xl font-black text-white mb-2">İstenmeyen Tüylerle Vedalaşın</h3>
-                 <p className="text-white/80 font-medium">Bölgesel ve tüm vücut paketlerimizdeki size özel indirimleri kaçırmayın.</p>
+                 <h3 className="text-2xl md:text-3xl font-black text-white mb-2">Cildinize Hak Ettiği Değeri Verin</h3>
+                 <p className="text-white/80 font-medium">Ücretsiz cilt analizi ve size özel bakım paketleri için hemen ulaşın.</p>
               </div>
-              <a href="https://wa.me/905407903333?text=Merhaba,%20lazer%20epilasyon%20kampanyalarınız%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" className="whitespace-nowrap bg-white text-[var(--color-primary)] px-8 py-4 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-2xl flex items-center gap-2">
-                 <span className="material-symbols-outlined">local_offer</span>
-                 Fiyat Bilgisi Al
+              <a href="https://wa.me/905407903333?text=Merhaba,%20ücretsiz%20cilt%20analizi%20için%20randevu%20almak%20istiyorum." target="_blank" className="whitespace-nowrap bg-white text-[var(--color-primary)] px-8 py-4 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-2xl flex items-center gap-2">
+                 <span className="material-symbols-outlined">calendar_month</span>
+                 Randevu Al
               </a>
            </div>
         </section>
